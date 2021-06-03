@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+*,
+:hover {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body__header,
+footer {
+  height: 20rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 70px;
+  color: #fff;
+  background: #1888a5;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+footer {
+  font-size: 18px;
+  height: 10rem;
+  margin-top: 10rem;
+}
+.main__blog {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5rem 0;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main__blog__item {
+  text-align: center;
+  /* height: min-content; */
+  width: 25rem;
+  margin: 3rem 2rem;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  padding: 0 0 3rem 0;
+}
+
+.main__blog__item-header {
+  background: #f4c0b4;
+  /* height: 50%; */
+  display: flex;
+}
+
+.main__blog__item-header img {
+  /* height: 12rem;
+  width: 15rem; */
+  margin: auto;
+  padding: 4rem;
+}
+
+.main__blog__item__footer-title {
+  padding: 3rem 0.2rem;
+  font-size: 1.4rem;
+}
+
+.main__blog__item__body {
+  padding: 0 3rem;
+  font-size: 1.3rem;
+}
+
+.main__paging {
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__paging button {
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #1888a5;
+  margin: 0 2rem;
 }
